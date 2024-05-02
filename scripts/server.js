@@ -10,11 +10,9 @@ const port = 5000;
 app.use(bodyParser.json());
 app.use(cors());
 
-// POST endpoint to handle form submissions
 app.post('/submit-form', (req, res) => {
   const formData = req.body;
   console.log('Form Data:', formData);
-  // You can handle the form data here (e.g., save it to a database)
   res.json({ message: 'Form submitted successfully!' });
 });
 
