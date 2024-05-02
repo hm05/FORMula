@@ -139,4 +139,9 @@ app.post('/submit-form', (req, res) => {
 });
 ```
 
-From the above code we can understand that 
+From the above code we can understand that after recieving the data from [main.js](scripts/main.js) the data is jsonified and then appended into [data.json](data.json) file.
+
+## Contributors
+<a href="https://github.com/hm05/Formula/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=hm05/Formula" />
+</a>
