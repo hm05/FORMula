@@ -1,10 +1,16 @@
-body{
+body {
     background-color: #fcfcfc;
     color: #292929;
 }
-h3 {
-    color: #131313;    ;
+h1, h2, h3 {
+    color: #131313;
 }
-.documentation {
+p {
     color: #404040;
+}
+.form-control, .btn {
+    border-radius: 20px; /* Increased border radius */
+}
+.submit-btn {
+    text-align: center; /* Centering the submit button */
 }

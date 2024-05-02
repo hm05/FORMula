@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/Assets/Logo.ico">
-    <link rel="stylesheet" href="style.css">
-    <title>Formula</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="Assets/Logo.ico" type="image/x-icon">
+  <title>Formula</title>
 </head>
 <body>
-    <div class="documentation">
-        <a href="">
-            <h3><b>Form</b>ula</h3>
-        </a>
-    </div>
+  <div class="container mt-5">
+    <a href="#">
+        <h1 class="mb-4"><b>Form</b>ula</h1>
+        <p>Form submission faster than Formula racing</p>
+    </a>
+    <form>
+      <div class="form-group">
+        <label for="exampleInputName">Name</label>
+        <input type="text" class="form-control" id="exampleInputName" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputMobile">Mobile Number</label>
+        <input type="tel" class="form-control" id="exampleInputMobile" placeholder="Enter your mobile number">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputStudentID">Student ID</label>
+        <input type="text" class="form-control" id="exampleInputStudentID" placeholder="Enter your student ID">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputUniversity">University Name</label>
+        <select class="form-control" id="exampleInputUniversity" onchange="checkOther()">
+          <option value="">Select your university</option>
+          <option value="Charotar University of Science and Technology">Charotar University of Science and Technology</option>
+          <option value="Other">Other</option>
+        </select>
+        <input type="text" class="form-control mt-2 d-none" id="otherUniversityInput" placeholder="Enter your university name">
+        <small id="universityHelp" class="form-text text-muted">Please select your University.</small>
+      </div>
+      <div class="submit-btn">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+  <script src="./scripts/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
