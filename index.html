@@ -12,7 +12,7 @@
   <div class="container mt-5">
     <h1 class="mb-4"><b>Form</b>ula</h1>
     <p>Form submission faster than Formula racing</p>
-    <form>
+    <form id="form">
       <div class="form-group">
         <label for="exampleInputName">Name</label>
         <input type="text" class="form-control" id="exampleInputName" placeholder="Enter your name">
@@ -27,7 +27,7 @@
       </div>
       <div class="form-group">
         <label for="exampleInputUniversity">University Name</label>
-        <select class="form-control" id="exampleInputUniversity" onchange="checkOther()">
+        <select class="form-control" id="exampleInputUniversity">
           <option value="">Select your university</option>
           <option value="Charotar University of Science and Technology">Charotar University of Science and Technology</option>
           <option value="Other">Other</option>
@@ -36,13 +36,12 @@
         <small id="universityHelp" class="form-text text-muted">Please select your University.</small>
       </div>
       <div class="submit-btn">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
       </div>
     </form>
   </div>
-  <script src="./scripts/main.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./scripts/main.js"></script>
 </body>
 </html>
